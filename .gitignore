@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Prisma
+prisma/migrations/migration_lock.toml
+
+# Docker
+.docker/
+
+# Preserved nested repository metadata
+frontend/.git-backup/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
