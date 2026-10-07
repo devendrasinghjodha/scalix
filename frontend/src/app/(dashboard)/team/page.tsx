@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { memberApi } from '@/lib/api';
-import { UserPlus, Shield, Trash2, Mail, X } from 'lucide-react';
+import { UserPlus, Trash2, Mail, X } from 'lucide-react';
 
 export default function TeamPage() {
   const { currentOrg, user } = useAuth();
@@ -40,7 +40,7 @@ export default function TeamPage() {
     try {
       const res = await memberApi.listInvitations(currentOrg.id);
       setInvitations(res.data.data || []);
-    } catch (error) {
+    } catch {
       // User may not have permissions
     }
   };

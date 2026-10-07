@@ -36,7 +36,6 @@ const plans = [
 export default function BillingPage() {
   const { currentOrg } = useAuth();
   const [subscription, setSubscription] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (currentOrg) loadSubscription();
@@ -49,8 +48,6 @@ export default function BillingPage() {
       setSubscription(res.data.data);
     } catch (error) {
       console.error('Failed to load subscription:', error);
-    } finally {
-      setLoading(false);
     }
   };
 

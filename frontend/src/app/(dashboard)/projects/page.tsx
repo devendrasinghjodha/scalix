@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { projectApi } from '@/lib/api';
-import { Plus, FolderKanban, Trash2, Edit2 } from 'lucide-react';
+import { Plus, FolderKanban, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ProjectsPage() {

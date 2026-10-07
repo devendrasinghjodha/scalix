@@ -70,7 +70,7 @@ cd backend
 cp .env.example .env  # Edit with your credentials
 npm install
 npx prisma generate
-npx prisma migrate dev
+npx prisma db push
 npx prisma db seed
 npm run dev
 
@@ -182,4 +182,4 @@ k6 run k6/load-test.js
 - **Database:** Neon Free
 - **Redis:** Upstash Free
 
-Total cost: ₹0
+Designed for local development and free-tier/self-hosted deployment; infrastructure costs depend on the selected hosting providers.

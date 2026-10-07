@@ -3,11 +3,11 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { orgApi, projectApi, taskApi } from '@/lib/api';
-import { FolderKanban, CheckSquare, Users, TrendingUp, Plus } from 'lucide-react';
+import { FolderKanban, CheckSquare, Users, Plus } from 'lucide-react';
 import Link from 'next/link';
 
 export default function DashboardPage() {
-  const { user, currentOrg, organizations, refreshOrgs } = useAuth();
+  const { user, currentOrg, refreshOrgs } = useAuth();
   const [stats, setStats] = useState({ projects: 0, tasks: 0, members: 0 });
   const [recentTasks, setRecentTasks] = useState<any[]>([]);
   const [showCreateOrg, setShowCreateOrg] = useState(false);

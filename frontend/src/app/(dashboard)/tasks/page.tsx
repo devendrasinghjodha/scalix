@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { taskApi, projectApi } from '@/lib/api';
-import { Plus, Filter, Search } from 'lucide-react';
+import { Plus, Search } from 'lucide-react';
 
 export default function TasksPage() {
   const { currentOrg } = useAuth();

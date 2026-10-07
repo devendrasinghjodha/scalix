@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { orgApi } from '@/lib/api';
-import { Settings as SettingsIcon, Save, Trash2, AlertTriangle } from 'lucide-react';
+import { Settings as SettingsIcon, Save, AlertTriangle } from 'lucide-react';
 
 export default function SettingsPage() {
   const { currentOrg, refreshOrgs, logout } = useAuth();
